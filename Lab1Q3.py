@@ -5,7 +5,7 @@
 import numpy as np
 import random
 
-total_flips = 100000
+total_flips = 1000000
 #total_flips = 1000000 #(debug)
 numCoinTosses = 100
 totalNumHeads = 0
