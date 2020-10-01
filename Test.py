@@ -1,5 +1,6 @@
 import random
 
-for i in range(3):
-    sum = random.randint(1, 6) + random.randint(1, 6)
-    print("Sum: ", sum)
+list1 = [1, 6, 3, 7];
+
+index = list1.index(8);
+print("this is the index: ", index);
