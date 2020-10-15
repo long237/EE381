@@ -25,7 +25,7 @@ this prints 10.
 
 
 numPeople = 1000
-numExperiments = 100000
+numExperiments = 1000000
 
 partyA = 0
 partyB = 501
@@ -47,11 +47,11 @@ for i in range(numExperiments):
 
     for k in range(len(peopleList)):
 
-        if peopleList[k] > partyC:
+        if peopleList[k] >= partyC:
             partyCounter[2] += 1 # you want to index the list where you keep of which people support party C
             #print("supports party C")
 
-        elif peopleList[k] > partyB:
+        elif peopleList[k] >= partyB:
             partyCounter[1] += 1 # you want to index the list where you keep of which people support party C
             #print("supports party B")
 
