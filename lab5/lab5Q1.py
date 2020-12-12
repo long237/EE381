@@ -25,7 +25,7 @@ def main():
     n_value = []
 
     #n = random.randint(1, 100)
-    for n in range(1, 101):
+    for n in range(1, 201):
         n_value.append(n)
         sample = random.sample(populationList, n)
         sample_mean = statistics.mean(sample)
@@ -57,12 +57,20 @@ def main():
     plt.plot(n_value, meanList, linestyle=' ', marker="x")
     plt.plot(n_value, posInList, 'r', linestyle='--')
     plt.plot(n_value, negaInList, 'r', linestyle='--')
+    plt.axhline(y=100, color="black")
+    plt.xlabel("Sample sizes")
+    plt.ylabel("x_bar")
+    plt.title("Sample means and 95% confidence intervals")
 
     #99 confidence graph
     figure2 = plt.figure(2)
     plt.plot(n_value, meanList, linestyle=' ', marker="x")
     plt.plot(n_value, posInList99, 'g', linestyle=':')
     plt.plot(n_value, negaInList99, 'g', linestyle=':')
+    plt.axhline(y=100, color="black")
+    plt.xlabel("Sample sizes")
+    plt.ylabel("x_bar")
+    plt.title("Sample means and 99% confidence intervals")
 
     plt.show()
 
